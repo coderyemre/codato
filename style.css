@@ -9,4 +9,36 @@ textarea{
     font-size: 16px;
     resize: none;
 }
+#buttons{
+    position: relative;
+    display: inline-block;
+   
+}
+.button{
+     padding: 2px;
+     
+}
+#document{
+    opacity: 0;
+    width: 0px;
+}
+#open{
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 1px;
+    border-style: outset;
+    border-color: dimgrey;
+    border-image: initial;
+    border-radius: 2px;
+    cursor: pointer;
+}
+   
+input{
+    opacity: 0;
 }

@@ -10,23 +10,20 @@
     <h1>Codato Basic Online Code Editor</h1>
     <hr>
       
-    <form method="post" action="functions.php">
+    <form enctype="multipart/form-data" method="post">
         <div id="buttons>">
             <label for="document" class="button" id="open">Open</label>
             <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-            <input name="document" id="document" type="file" />      
+            <input name="document" id="document" type="file"/>      
             <button class="button">Download</button>
             <button class="button">Save</button>
             <button class="button">Save as</button>
         </div>
     </form>
-      
-    <textarea></textarea>
+      <div id="text"></div>
 
     
-    <script type="text/javascript" src="index.js">
-        
-    </script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
 

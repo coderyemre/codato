@@ -11,17 +11,17 @@
     <hr>
       
     <form enctype="multipart/form-data" method="post">
-        <div id="buttons>">
+        
             <label for="document" class="button" id="open">Open</label>
             <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-            <input name="document" id="document" type="file"/>      
-            <button class="button">Download</button>
+            <input name="document" id="document" type="file"/>
+        </form>
+            <button class="button" onclick="download()">Download</button>
             <button class="button">Save</button>
             <button class="button">Save as</button>
-        </div>
-    </form>
-      <div id="text"></div>
-
+        
+    
+      <textarea id="text"></textarea>
     
     <script type="text/javascript" src="index.js"></script>
   </body>

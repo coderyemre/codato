@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="tr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Codato</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Codato Basic Online Code Editor</h1>
-    <hr>
-    <div id="menu">
-        <form enctype="multipart/form-data" method="post" class="button">
-            <label for="document" class="button" id="open">Open</label>
-            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-            <input name="document" id="document" type="file"/>
-        </form>
-        <button class="button" onclick="download()">Download</button>
-        <button class="button" onclick="save()">Save</button>
-        <input type="text" class="button" id="file_name">         
-    </div>
-      <textarea id="text"></textarea>
-    <script type="text/javascript" src="index.js"></script>
-  </body>
-</html>
 
+<head>
+  <meta charset="utf-8" />
+  <title>Codato</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Codato Basic Online Code Editor</h1>
+  <hr />
+  <div id="menu">
+    <form enctype="multipart/form-data" method="post" class="button">
+      <label for="document" id="open">Open</label>
+      <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+      <input name="document" id="document" type="file" />
+    </form>
+    <button  id="open" class="button" onclick="download()">Download</button>
+    <button id="open" class="button" onclick="save()">Save</button>
+    <input type="text" class="button" id="file_name" />
+  </div>
+  <textarea id="text"></textarea>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

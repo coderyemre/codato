@@ -21,6 +21,7 @@
     width: 0px;
 }
 #open{
+    font-family: sans-serif;
     appearance: auto;
     writing-mode: horizontal-tb !important;
     text-rendering: auto;
@@ -35,4 +36,5 @@
     border-image: initial;
     border-radius: 2px;
     cursor: pointer;
+    font-size: inherit;
 }

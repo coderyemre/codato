@@ -51,7 +51,7 @@ function getCookie(cname) {
 }
 function save(){
     var file_name=document.getElementById("file_name").value;
-    setCookie(file_name,textarea,365);
+    setCookie(file_name,textarea.value,365);
     console.log(getCookie(file_name));
 }
 

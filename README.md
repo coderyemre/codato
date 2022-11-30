@@ -24,4 +24,4 @@ It's a basic and useful online code editor. It's coding with HTML, CSS, Javascri
 
 ## İssues
 
-- [ ] [Open Button's style isn't same of the other buttons' style #1](https://github.com/coderyemre/codato/issues/1)
+- [x] [Open Button's style isn't same of the other buttons' style #1](https://github.com/coderyemre/codato/issues/1)

@@ -27,6 +27,7 @@ function download() {
   document.body.removeChild(link);
   window.URL.revokeObjectURL(url);
 }
+//IT's PROBLEM https://github.com/coderyemre/codato/issues/3
 //Save Function
 //Set cookie and Get cookie (!THANKS W3SCHOOLS!)
 function setCookie(cname, cvalue, exdays) {
@@ -63,13 +64,6 @@ function char_edit(char){
         },0);  
 }
 function text_edit(event){
-    /*console.log(event.key);
-    if(event.key=='('){
-        char_edit(')');     
-    }
-    else if(event.key=='"'){
-        char_edit('"');
-    */
     switch(event.key) {
         case '(':
             char_edit(')'); 

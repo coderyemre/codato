@@ -1,6 +1,7 @@
 //Open Function
 var inputElement = document.getElementById("document");
 var textarea=document.getElementById("text");
+
 inputElement.addEventListener("change", () => {
   const [file] = inputElement.files;
   if (file) {
@@ -54,4 +55,40 @@ function save(){
     setCookie(file_name,textarea.value,365);
     console.log(getCookie(file_name));
 }
-
+//Text Edit
+function char_edit(char){
+    setTimeout(() => {
+            text=textarea.value;
+            textarea.value=text+char;
+        },0);  
+}
+function text_edit(event){
+    /*console.log(event.key);
+    if(event.key=='('){
+        char_edit(')');     
+    }
+    else if(event.key=='"'){
+        char_edit('"');
+    */
+    switch(event.key) {
+        case '(':
+            char_edit(')'); 
+            break;
+        case '"':
+            char_edit('"');
+            break;
+        case "'":
+            char_edit("'");
+            break;
+        case "[":
+            char_edit("]");
+            break;
+        case "{":
+            char_edit("}");
+        default:
+            break;
+    
+    }
+    
+    
+}

@@ -13,7 +13,7 @@ It's a basic and useful online code editor. It's coding with HTML, CSS, Javascri
 - [ ] Display Saves
 
 #### Text Editing
-- [ ] Auto Complete Characters (brackets, quotes...)
+- [x] Auto Complete Characters (brackets, quotes...)
 - [ ] Auto Complete Basic Syntax (if,else,function...) 
 
 ### Styling

@@ -10,15 +10,22 @@
 <body>
   <h1>Codato Basic Online Code Editor</h1>
   <hr />
-  <div id="menu">
+  <div id="button_menu" class="menu">
     <form enctype="multipart/form-data" method="post" class="button">
-      <label for="document" id="open">Open</label>
+      <label for="document" id="click">Open</label>
       <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
       <input name="document" id="document" type="file" />
     </form>
-    <button  id="open" class="button" onclick="download()">Download</button>
-    <button id="open" class="button" onclick="save()">Save</button>
+    <button  id="click" class="button" onclick="download()">Download</button>
+    <button id="click" class="button" onclick="save()">Save</button>
     <input type="text" class="button" id="file_name" />
+  </div>
+  <div id="settings_menu" class="menu">
+    <input list="programmings" name="programming" id="programming">
+    <datalist id="programmings">
+      <option value="Javascript">
+      <option value="Text">
+    </datalist>
   </div>
   <textarea id="text" onkeydown="text_edit(event)"></textarea>
   <script type="text/javascript" src="index.js"></script>

@@ -1,6 +1,7 @@
 //Open Function
 var inputElement = document.getElementById("document");
 var textarea=document.getElementById("text");
+var file_name=document.getElementById("file_name");
 
 inputElement.addEventListener("change", () => {
   const [file] = inputElement.files;
@@ -16,7 +17,8 @@ inputElement.addEventListener("change", () => {
 //Download Function
 function download() {
   var t=document.getElementById("text").value;
-  const file = new File([t], 'new_file.txt', {
+  console.log(file_name);
+  const file = new File([t], file_name.value, {
   type: 'text/plain',});
   const link = document.createElement('a');
   const url = URL.createObjectURL(file);
@@ -52,9 +54,8 @@ function getCookie(cname) {
   return "";
 }
 function save(){
-    var file_name=document.getElementById("file_name").value;
-    setCookie(file_name,textarea.value,365);
-    console.log(getCookie(file_name));
+    setCookie(file_name.value,textarea.value,365);
+    console.log(getCookie(file_name.value));
 }
 //Text Edit
 function char_edit(char){

@@ -10,17 +10,20 @@
     resize: none;
     overflow: scroll;  
 }
-#menu{
+#settings_menu{
+    float: right;
+}
+#button_menu{
     position: relative;
 }
-.button{
+.button,.menu{
      display: inline-block;
 }
 #document{
     opacity: 0;
     width: 0px;
 }
-#open{
+#click{
     font-family: sans-serif;
     appearance: auto;
     writing-mode: horizontal-tb !important;

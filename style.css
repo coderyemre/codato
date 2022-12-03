@@ -40,4 +40,14 @@
     border-radius: 2px;
     cursor: pointer;
     font-size: inherit;
+    transition: 0.2s;
+    
+}
+#click:hover{
+    background-color:darkgray;
+    padding: 1px 12px;
+    border-radius: 6px;
+}
+#click:active{
+    background-color:dimgrey;
 }

@@ -29,33 +29,11 @@ function download() {
   document.body.removeChild(link);
   window.URL.revokeObjectURL(url);
 }
-//IT's PROBLEM https://github.com/coderyemre/codato/issues/3
-//Save Function
-//Set cookie and Get cookie (!THANKS W3SCHOOLS!)
-function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i <ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
+//Save Function (! THANKS alexpietsch !)
 function save(){
-    setCookie(file_name.value,textarea.value,365);
-    console.log(getCookie(file_name.value));
+    localStorage.setItem(file_name.value, textarea.value);
+    textarea.value = localStorage.getItem(file_name.value);
+    console.log(localStorage.getItem(file_name.value));  
 }
 //Text Edit
 function char_edit(char){
@@ -65,6 +43,7 @@ function char_edit(char){
         },0);  
 }
 function text_edit(event){
+    console.log(event.key);
     switch(event.key) {
         case '(':
             char_edit(')'); 
@@ -80,7 +59,15 @@ function text_edit(event){
             break;
         case "{":
             char_edit("}");
+        case ";":
+            char_edit("\n");
+        /*case " ":
+            char_edit("\t");*/
         default:
+            if(event.keyCode==32){
+                char_edit("\t");
+            }
+            
             break;
     
     }

@@ -14,6 +14,7 @@ It's a basic and useful online code editor. It's coding with HTML, CSS, Javascri
 
 #### Text Editing
 - [x] Auto Complete Characters (brackets, quotes...)
+- [ ] Opened File Editing
 - [ ] Auto Complete Basic Syntax (if,else,function...) 
 
 ### Styling

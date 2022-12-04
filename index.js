@@ -59,17 +59,15 @@ function text_edit(event){
             break;
         case "{":
             char_edit("}");
+            break;
         case ";":
             char_edit("\n");
-        /*case " ":
-            char_edit("\t");*/
+            break;
         default:
+            console.log(event.keyCode);
             if(event.keyCode==32){
                 char_edit("\t");
             }
-            
-            break;
-    
     }
     
     

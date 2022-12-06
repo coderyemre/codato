@@ -10,12 +10,15 @@ It's a basic and useful online code editor. It's coding with HTML, CSS, Javascri
 - [x] Open Function
 - [x] Download Function
 - [x] Save Function
-- [ ] Display Saves
+- [x] Load Function
+- [x] Display Saves
 
 #### Text Editing
 - [x] Auto Complete Characters (brackets, quotes...)
-- [ ] Opened File Editing
 - [ ] Auto Complete Basic Syntax (if,else,function...) 
+- [x] Opened File Editing
+- [] Auto Opened File Editing Function
+
 
 ### Styling
 - [x] Mother Skeleton

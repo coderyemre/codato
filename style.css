@@ -16,14 +16,14 @@
 #button_menu{
     position: relative;
 }
-.button,.menu{
+.click,.menu{
      display: inline-block;
 }
 #document{
     opacity: 0;
     width: 0px;
 }
-#click{
+.click{
     font-family: sans-serif;
     appearance: auto;
     writing-mode: horizontal-tb !important;
@@ -43,12 +43,16 @@
     transition: 0.2s;
     
 }
-#click:hover{
+.click:hover{
     background-color:darkgray;
     padding: 1px 12px;
     border-radius: 6px;
 }
-#click:active{
+.click:active{
     background-color:dimgrey;
 }
+#saves{
+    display: none;
+}
+
 

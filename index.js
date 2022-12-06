@@ -1,7 +1,16 @@
+console.log(localStorage);
+console.log(localStorage.getItem("saves"));
+for( var i=0; i<=localStorage.length;i++){
+console.log(localStorage.key(i))
+}
+if(localStorage.getItem("saves")!=null){
+    var saves_list=localStorage.saves.split(",");
+    console.log(saves_list);
+}
+var file_name=document.getElementById("file_name");
 //Open Function
 var inputElement = document.getElementById("document");
 var textarea=document.getElementById("text");
-var file_name=document.getElementById("file_name");
 
 inputElement.addEventListener("change", () => {
   const [file] = inputElement.files;
@@ -31,9 +40,20 @@ function download() {
 }
 //Save Function (! THANKS alexpietsch !)
 function save(){
-    localStorage.setItem(file_name.value, textarea.value);
-    textarea.value = localStorage.getItem(file_name.value);
-    console.log(localStorage.getItem(file_name.value));  
+    if(localStorage.getItem("saves")==null){
+        localStorage.setItem(file_name.value, textarea.value);
+        localStorage.setItem("saves",file_name.value+",");
+    }
+    else{
+        localStorage.setItem(file_name.value, textarea.value);
+        //DELETE ME!!!!!
+        localStorage.saves=localStorage.saves+file_name.value+",";
+        console.log(localStorage.getItem(file_name.value)); 
+    }
+}
+//Load Function
+function load(){
+    
 }
 //Text Edit
 function char_edit(char){

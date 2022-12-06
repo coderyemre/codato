@@ -9,7 +9,7 @@ It's a basic and useful online code editor. It's coding with HTML, CSS, Javascri
 #### Menu
 - [x] Open Function
 - [x] Download Function
-- [ ] Save Function
+- [x] Save Function
 - [ ] Display Saves
 
 #### Text Editing

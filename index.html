@@ -18,12 +18,14 @@
     </form>
     <button  id="download" class="click" onclick="download()">Download</button>
     <button id="save" class="click" onclick="save()">Save</button>
-    <button id="load" class="click" onclick="load()">Load</button>
-    <ul id="saves">
-        <li>AAAAAAAAAAA</li>
-    </ul>
+    <button id="load" class="click" onclick="load()">Load</button> 
     <input type="text" class="menu" id="file_name" />
   </div>
+    <div id="saves">   
+        <button id="quit" class="click" onclick="quit()">X</button>
+        <table id="saves_list">
+        <tr><th>File Name</th></tr></table>
+    </div>
   <div id="settings_menu" class="menu">
     <input list="programmings" name="programming" id="programming">
     <datalist id="programmings">

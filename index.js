@@ -1,19 +1,19 @@
+//Load File Function
 if(localStorage.getItem("saves")!=null){
     var saves_list=localStorage.saves.split(",");
     saves_list=saves_list.filter(function(i){return i!=''});
-}
-//Load File Function
-for (var i=0;i<saves_list.length;i++){
-        var tr=document.createElement("tr");
-        document.getElementById("saves_list").appendChild(tr);
-        var td=document.createElement("td");
-        tr.appendChild(td);
-        td.addEventListener("click",function(){
-            textarea.value=localStorage.getItem(this.innerHTML);
-            file_name.value=this.innerHTML;
-            quit();
-        });
-        td.innerHTML=saves_list[i];  
+    for (var i=0;i<saves_list.length;i++){
+            var tr=document.createElement("tr");
+            document.getElementById("saves_list").appendChild(tr);
+            var td=document.createElement("td");
+            tr.appendChild(td);
+            td.addEventListener("click",function(){
+                textarea.value=localStorage.getItem(this.innerHTML);
+                file_name.value=this.innerHTML;
+                quit();
+            });
+            td.innerHTML=saves_list[i];  
+    }
 }
 var file_name=document.getElementById("file_name");
 //Open Function
